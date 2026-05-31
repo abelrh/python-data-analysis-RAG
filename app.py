@@ -9,7 +9,7 @@ from langchain_groq import ChatGroq
 
 # إعداد واجهة المستخدم
 st.set_page_config(page_title="PDF Data Analysis Chatbot", page_icon="🐼", layout="centered")
-st.title("🐼 RAG engine for searching data books")
+st.title("🐼 searching data from books")
 
 
 # خانة إدخال الـ Groq API Key بأمان من الشريط الجانبي
@@ -21,7 +21,7 @@ if not groq_api_key:
 os.environ["GROQ_API_KEY"] = groq_api_key
 
 # رفع ملف الـ PDF من خلال الواجهة مباشرة بدلاً من كود الكولاب
-uploaded_file = st.file_uploader("قم برفع ملف الـ PDF هنا 👇", type=["pdf"])
+uploaded_file = st.file_uploader("book is downloading ", type=["pdf"])
 
 # دالة معالجة الـ PDF وبناء الـ Vector Store
 @st.cache_resource
