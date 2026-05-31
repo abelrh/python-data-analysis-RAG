@@ -9,8 +9,8 @@ from langchain_groq import ChatGroq
 
 # إعداد واجهة المستخدم
 st.set_page_config(page_title="PDF Data Analysis Chatbot", page_icon="🐼", layout="centered")
-st.title("🐼 محرك الـ RAG للبحث في كتب البيانات")
-st.write("ارفع كتاب 'Python for Data Analysis' أو أي ملف PDF وابدأ الشات مع الموديل Llama 3.3!")
+st.title("🐼 RAG engine for searching data books")
+
 
 # خانة إدخال الـ Groq API Key بأمان من الشريط الجانبي
 groq_api_key = st.sidebar.text_input("Enter your Groq API Key:", type="password")
